@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/dashboard">
+
+    <fragment
+        android:id="@+id/halamanDiklat"
+        android:name="smkn12.tutorials.teachandroidnav.HalamanDiklat"
+        android:label="fragment_halaman_diklat"
+        tools:layout="@layout/fragment_halaman_diklat">
+        <action
+            android:id="@+id/action_halamanDiklat_to_dashboard"
+            app:destination="@id/dashboard" />
+    </fragment>
+    <fragment
+        android:id="@+id/halamanPortofolio"
+        android:name="smkn12.tutorials.teachandroidnav.HalamanPortofolio"
+        android:label="fragment_halaman_portofolio"
+        tools:layout="@layout/fragment_halaman_portofolio">
+        <action
+            android:id="@+id/action_halamanPortofolio_to_dashboard"
+            app:destination="@id/dashboard" />
+    </fragment>
+    <fragment
+        android:id="@+id/halamanProfil"
+        android:name="smkn12.tutorials.teachandroidnav.HalamanProfil"
+        android:label="fragment_halaman_profil"
+        tools:layout="@layout/fragment_halaman_profil">
+        <action
+            android:id="@+id/action_halamanProfil_to_dashboard2"
+            app:destination="@id/dashboard" />
+    </fragment>
+    <fragment
+        android:id="@+id/dashboard"
+        android:name="smkn12.tutorials.teachandroidnav.Dashboard"
+        android:label="fragment_dashboard"
+        tools:layout="@layout/fragment_dashboard">
+        <action
+            android:id="@+id/action_dashboard_to_halamanProfil"
+            app:destination="@id/halamanProfil" />
+        <action
+            android:id="@+id/action_dashboard_to_halamanPortofolio"
+            app:destination="@id/halamanPortofolio" />
+        <action
+            android:id="@+id/action_dashboard_to_halamanDiklat"
+            app:destination="@id/halamanDiklat" />
+    </fragment>
+</navigation>

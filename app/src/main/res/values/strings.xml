@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">TeachAndroidNav</string>
+    <string name="input_a">Input A</string>
+    <string name="input_b">Input B</string>
+    <string name="hello">hello</string>
+    <string name="txtButtonHello">CLICK ME</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="welcome">Welcome to My App</string>
+    <string name="view_my_profile">View My Profile</string>
+    <string name="view_my_projects">View My Projects</string>
+    <string name="view_my_certificates">View My Certificates</string>
+    <string name="welcome_to_my_profile_page">Welcome to My Profile Page</string>
+    <string name="daftar_diklat_workshop">Daftar Diklat / Workshop</string>
+    <string name="welcome_to_my_projects">Welcome to My Projects</string>
+    <string name="back_to_dashboard">Back to dashboard</string>
+    <string name="my_portrait">My portrait</string>
+    <string name="namalengkap">Listyanti Dewi Astuti, S.Pd. M.Kom</string>
+    <string name="nip">NIP. 19881222 201403 2 001</string>
+    <string name="bio">I\'m a teacher at State Vocational High School 12 of Malang City. I teach software and game development</string>
+    <string name="email">email: dewi@smkn12malang.sch.id</string>
+</resources>

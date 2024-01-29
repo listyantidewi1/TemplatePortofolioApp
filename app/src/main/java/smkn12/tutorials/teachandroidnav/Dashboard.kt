@@ -11,8 +11,8 @@ import smkn12.tutorials.teachandroidnav.databinding.FragmentDashboardBinding
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-private const val ARG_PARAM1 = "param1"
-private const val ARG_PARAM2 = "param2"
+//private const val ARG_PARAM1 = "param1"
+//private const val ARG_PARAM2 = "param2"
 
 /**
  * A simple [Fragment] subclass.
@@ -28,8 +28,11 @@ class Dashboard : Fragment() {
     ): View? {
         val binding : FragmentDashboardBinding = DataBindingUtil.inflate(inflater, R.layout.fragment_dashboard, container, false)
 
+
+
         binding.btnProfile.setOnClickListener{
-            it.findNavController().navigate(R.id.action_dashboard_to_halamanProfil)
+            var yourName = binding.tvInputYourName.text.toString()
+            it.findNavController().navigate(DashboardDirections.actionDashboardToHalamanProfil(yourName))
         }
 
         binding.btnCertificates.setOnClickListener {

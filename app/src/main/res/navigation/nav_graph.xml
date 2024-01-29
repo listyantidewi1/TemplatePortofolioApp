@@ -31,6 +31,9 @@
         <action
             android:id="@+id/action_halamanProfil_to_dashboard2"
             app:destination="@id/dashboard" />
+        <argument
+            android:name="yourName"
+            app:argType="string" />
     </fragment>
     <fragment
         android:id="@+id/dashboard"

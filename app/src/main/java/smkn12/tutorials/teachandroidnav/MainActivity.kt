@@ -14,5 +14,7 @@ class MainActivity : AppCompatActivity() {
         //mengatur content view
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
 
+
+
     }
 }

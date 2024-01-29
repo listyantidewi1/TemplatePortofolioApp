@@ -8,7 +8,7 @@
     <fragment
         android:id="@+id/halamanDiklat"
         android:name="smkn12.tutorials.teachandroidnav.HalamanDiklat"
-        android:label="fragment_halaman_diklat"
+        android:label="Diklat"
         tools:layout="@layout/fragment_halaman_diklat">
         <action
             android:id="@+id/action_halamanDiklat_to_dashboard"
@@ -17,7 +17,7 @@
     <fragment
         android:id="@+id/halamanPortofolio"
         android:name="smkn12.tutorials.teachandroidnav.HalamanPortofolio"
-        android:label="fragment_halaman_portofolio"
+        android:label="Portofolio"
         tools:layout="@layout/fragment_halaman_portofolio">
         <action
             android:id="@+id/action_halamanPortofolio_to_dashboard"
@@ -26,7 +26,7 @@
     <fragment
         android:id="@+id/halamanProfil"
         android:name="smkn12.tutorials.teachandroidnav.HalamanProfil"
-        android:label="fragment_halaman_profil"
+        android:label="Profil"
         tools:layout="@layout/fragment_halaman_profil">
         <action
             android:id="@+id/action_halamanProfil_to_dashboard2"
@@ -38,7 +38,7 @@
     <fragment
         android:id="@+id/dashboard"
         android:name="smkn12.tutorials.teachandroidnav.Dashboard"
-        android:label="fragment_dashboard"
+        android:label="Dashboard"
         tools:layout="@layout/fragment_dashboard">
         <action
             android:id="@+id/action_dashboard_to_halamanProfil"

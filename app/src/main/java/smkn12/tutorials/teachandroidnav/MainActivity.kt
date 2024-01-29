@@ -14,18 +14,5 @@ class MainActivity : AppCompatActivity() {
         //mengatur content view
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
 
-//        menambah listener pada btnHello utk mendeteksi apakah btn sudah di klik
-//        binding.btnHello.setOnClickListener{
-//            //instruksi yg dieksekusi pada saat button btnHello diklik
-//            //ambil data / baca data dari inputA dan inputB
-//            var nilaiA = binding.inputA.text.toString().toInt()
-//            var nilaiB = binding.inputB.text.toString().toInt()
-//            var hasil = jumlah(nilaiA, nilaiB) //memanggil fungsi jumlah
-//            binding.tvHello.setText(hasil.toString())
-//        }
     }
-
-//    private fun jumlah(a: Int, b: Int): Int{
-//        return a + b
-//    }
 }

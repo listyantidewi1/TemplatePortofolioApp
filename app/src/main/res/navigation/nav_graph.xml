@@ -12,7 +12,11 @@
         tools:layout="@layout/fragment_halaman_diklat">
         <action
             android:id="@+id/action_halamanDiklat_to_dashboard"
-            app:destination="@id/dashboard" />
+            app:destination="@id/dashboard"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/fade_out" />
     </fragment>
     <fragment
         android:id="@+id/halamanPortofolio"
@@ -21,7 +25,11 @@
         tools:layout="@layout/fragment_halaman_portofolio">
         <action
             android:id="@+id/action_halamanPortofolio_to_dashboard"
-            app:destination="@id/dashboard" />
+            app:destination="@id/dashboard"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/fade_out" />
     </fragment>
     <fragment
         android:id="@+id/halamanProfil"
@@ -30,7 +38,11 @@
         tools:layout="@layout/fragment_halaman_profil">
         <action
             android:id="@+id/action_halamanProfil_to_dashboard2"
-            app:destination="@id/dashboard" />
+            app:destination="@id/dashboard"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/fade_out" />
         <argument
             android:name="yourName"
             app:argType="string"
@@ -44,13 +56,23 @@
         tools:layout="@layout/fragment_dashboard">
         <action
             android:id="@+id/action_dashboard_to_halamanProfil"
-            app:destination="@id/halamanProfil" />
+            app:destination="@id/halamanProfil"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/fade_out" />
         <action
             android:id="@+id/action_dashboard_to_halamanPortofolio"
-            app:destination="@id/halamanPortofolio" />
+            app:destination="@id/halamanPortofolio"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right" />
         <action
             android:id="@+id/action_dashboard_to_halamanDiklat"
-            app:destination="@id/halamanDiklat" />
+            app:destination="@id/halamanDiklat"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/fade_out" />
     </fragment>
     <fragment
         android:id="@+id/aboutFragment"

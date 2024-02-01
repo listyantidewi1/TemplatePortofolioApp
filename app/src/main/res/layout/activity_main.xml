@@ -8,7 +8,8 @@
     </data>
 
 
-<androidx.drawerlayout.widget.DrawerLayout
+<LinearLayout
+    android:orientation="vertical"
     android:id="@+id/drawer_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
@@ -16,23 +17,27 @@
     <fragment
         android:id="@+id/navhost_fragment"
         android:name="androidx.navigation.fragment.NavHostFragment"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
         app:defaultNavHost="true"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        android:layout_weight="1"
         app:navGraph="@navigation/nav_graph" />
 
-    <com.google.android.material.navigation.NavigationView
-        android:layout_gravity="start"
-        android:id="@+id/nav_view"
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
         android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        app:menu="@menu/overflow_menu">
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        app:menu="@menu/bottom_navigation_menu" />
 
-    </com.google.android.material.navigation.NavigationView>
+    <!--    <com.google.android.material.navigation.NavigationView-->
+<!--        android:layout_gravity="start"-->
+<!--        android:id="@+id/nav_view"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="match_parent"-->
+<!--        app:menu="@menu/overflow_menu">-->
 
-</androidx.drawerlayout.widget.DrawerLayout>
+<!--    </com.google.android.material.navigation.NavigationView>-->
+
+</LinearLayout>
 </layout>

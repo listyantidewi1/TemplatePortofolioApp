@@ -33,7 +33,9 @@
             app:destination="@id/dashboard" />
         <argument
             android:name="yourName"
-            app:argType="string" />
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue="friend" />
     </fragment>
     <fragment
         android:id="@+id/dashboard"

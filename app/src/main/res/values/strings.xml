@@ -22,4 +22,8 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="hello_this_is_about_page">Hello, this is \'about\' page</string>
+    <string name="home">home</string>
+    <string name="profile">profile</string>
+    <string name="study">study</string>
+    <string name="works">works</string>
 </resources>

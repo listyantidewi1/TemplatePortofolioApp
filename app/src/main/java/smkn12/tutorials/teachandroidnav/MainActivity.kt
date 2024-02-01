@@ -16,13 +16,14 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         //mengatur content view
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
-        drawerLayout = binding.drawerLayout
+//        drawerLayout = binding.drawerLayout
         val navCtrl = this.findNavController(R.id.navhost_fragment)
-        NavigationUI.setupActionBarWithNavController(this, navCtrl, drawerLayout)
-        NavigationUI.setupWithNavController(binding.navView, navCtrl)
+        NavigationUI.setupActionBarWithNavController(this, navCtrl)
+//        NavigationUI.setupWithNavController(binding.navView, navCtrl)
+        NavigationUI.setupWithNavController(binding.bottomNavigation, navCtrl)
     }
     override fun onSupportNavigateUp(): Boolean {
         val navCtrl = this.findNavController(R.id.navhost_fragment)
-        return NavigationUI.navigateUp(navCtrl, drawerLayout)
+        return navCtrl.navigateUp()
     }
 }

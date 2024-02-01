@@ -53,6 +53,6 @@
     <fragment
         android:id="@+id/aboutFragment"
         android:name="smkn12.tutorials.teachandroidnav.AboutFragment"
-        android:label="fragment_about"
+        android:label="About"
         tools:layout="@layout/fragment_about" />
 </navigation>
